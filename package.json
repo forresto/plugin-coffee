@@ -21,7 +21,7 @@
   "homepage": "https://github.com/forresto/system-coffee",
   "jspm": {
     "dependencies": {
-      "coffeescript": "github:jashkenas/coffeescript@^1.10.1"
+      "coffeescript": "github:chrmoritz/coffeescript@^1.10.1"
     },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.87",
