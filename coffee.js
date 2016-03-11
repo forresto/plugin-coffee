@@ -1,4 +1,4 @@
-var Coffee = require('./coffee-script');
+var Coffee = require('coffee-script');
 
 exports.translate = function(load) {
   var output = Coffee.compile(load.source, {

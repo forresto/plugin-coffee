@@ -20,9 +20,19 @@
   },
   "homepage": "https://github.com/forresto/system-coffee",
   "jspm": {
+    "dependencies": {
+      "coffee-script": "npm:coffee-script@^1.10.0"
+    },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.87",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87"
+    },
+    "overrides": {
+      "npm:coffee-script@1.10.0": {
+        "map": {
+          "child_process": "@empty"
+        }
+      }
     }
   }
 }
