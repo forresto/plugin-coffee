@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>SystemJS-CoffeeScript plugin test</title>
   <script src="jspm_packages/system.js"></script>
+  <script src="./config.js"></script>
   <script>
-    System.import('./test.coffee!')
+    System.import('./test.coffee!./coffee.js')
       .then(function (test) {
         var t = new test('Test');
         document.body.innerHTML += t.go(3);
@@ -16,6 +17,6 @@
   </script>
 </head>
 <body>
-  Wait for it... 
+  Wait for it...
 </body>
 </html>
