@@ -6,5 +6,5 @@ exports.translate = function(load) {
     bare: true
   });
   load.source = output.js;
-  load.metadata.sourceMap = output.v3SourceMap;
+  load.metadata.sourceMap = JSON.parse(output.v3SourceMap);
 };
